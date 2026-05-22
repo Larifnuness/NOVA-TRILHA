@@ -16,7 +16,7 @@
   color: white;
   margin:20px;
   position: relative;
-  top: -250px;
+  top: -570px;
   left: -470px;
 }
 
@@ -83,4 +83,14 @@ card{
   color: white;
   margin:20px;
 
+}
+.texto{
+  width: 320px;
+  font-size: -10px;
+  line-height: 1.4;
+  font-family: Arial, sans-serif;
+  color: #1e1e1e;
+  position: relative;
+  top: 20px;
+  left:30px;
 }
