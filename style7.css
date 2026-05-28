@@ -1,0 +1,103 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* CARDS */
+.ii {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+/* CARD */
+.card{
+  width: 100px;
+  height: 100px;
+  background-color:#E61919;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin: 20px;
+  position: relative;
+  top: -700px;
+  left: -500px;
+
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+
+  transition: 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+/* IMAGEM DO CARD */
+.card img{
+  width: 100%;
+  left: 120px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* HEADER */
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  margin-top: 60px;
+}
+
+/* TITULO */
+h1{
+  color:#215BCF;
+  font-size: 55px;
+  font-family: "Bowlby One SC", sans-serif;
+
+  margin: 0;
+}
+
+/* SUBTITULO */
+header p{
+  color:#000020;
+  font-size: 24px;
+  font-family: "KoHo", sans-serif;
+
+  margin-top: 10px;
+}
+
+/* TEXTO QUADRADO E DESPOJADO */
+.texto{
+  width: 700px;
+  background-color: white;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 25px;
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Karla", sans-serif;
+  color: #1e1e1e;
+  text-align: justify;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.10);
+}
+
+/* FOOTER */
+footer{
+  background-color: #FBC120;
+
+  padding: 20px;
+
+  text-align: center;
+
+  margin-top: 60px;
+
+  width: 100%;
+}

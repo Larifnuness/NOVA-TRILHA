@@ -1,0 +1,158 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* CARDS */
+.ii {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+/* CARD */
+.card{
+  width: 100px;
+  height: 100px;
+  background-color:#E61919;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin: 20px;
+  position: relative;
+  top: -1080px;
+  left: -400px;
+
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+
+  transition: 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+/* IMAGEM DO CARD
+.card img{
+  width: 100%;
+  left: 120px;
+  border-radius: 15px;
+  object-fit: cover;
+} */
+
+
+.card-m {
+  width: 320px;     
+  height: auto;  
+  right: 10px; 
+  left: 20px;    /* Largura ideal para caber os 3 na tela horizontalmente */
+  background-color: #FBC120;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  /* Removido o top e left negativos que jogavam o card para fora do Flexbox */
+}
+
+.botao-sobre {
+  position: absolute;
+  bottom: -15px;           /* Posiciona na parte inferior da foto igual ao seu modelo */
+  left: 50%;
+  transform: translateX(-50%); /* Centralização horizontal perfeita */
+  width: 80%;
+  padding: 12px 20px;
+  background-color: #215BCF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "KoHo", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+  white-space: nowrap;     /* Evita que o texto quebre linhas */
+}
+/* --- CONTAINER DA FOTO + BOTÃO --- */
+.container-foto {
+  position: relative;      /* Permite que o botão se posicione de forma absoluta dentro dele */
+  width: 100%;
+  border-radius: 12px;
+  overflow: visible;       /* Deixa o botão passar da borda se necessário */
+}
+
+.card-m img {
+  width: 100%;
+  height: 220px;           /* Altura uniforme para todas as imagens */
+  object-fit: cover;       /* Ajusta a imagem sem esticar ou distorcer */
+  border-radius: 10px;
+  display: block;
+}
+
+.text-card {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 10px;
+  padding: 20px;
+}
+/* HEADER */
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  margin-top: 60px;
+}
+
+/* TITULO */
+h1{
+  color:#215BCF;
+  font-size: 55px;
+  font-family: "Bowlby One SC", sans-serif;
+
+  margin: 0;
+}
+
+/* SUBTITULO */
+header p{
+  color:#000020;
+  font-size: 24px;
+  font-family: "KoHo", sans-serif;
+
+  margin-top: 10px;
+}
+
+/* TEXTO QUADRADO E DESPOJADO */
+.texto{
+  width: 700px;
+  background-color: white;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 25px;
+  font-size: 20px;
+  line-height: 1.8;
+  font-family: "Karla", sans-serif;
+  color: #1e1e1e;
+  text-align: justify;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.10);
+}
+
+/* FOOTER */
+footer{
+  background-color: #FBC120;
+
+  padding: 20px;
+
+  text-align: center;
+
+  margin-top: 60px;
+
+  width: 100%;
+}
