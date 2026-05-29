@@ -101,3 +101,11 @@ footer{
 
   width: 100%;
 }
+.btn-voltar{
+  padding: 10px 20px;
+  border: none;
+  background: #1e3a8a;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
