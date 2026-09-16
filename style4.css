@@ -116,3 +116,187 @@ footer p {
   left: -370px;
   top: 70px;
  }
+
+ /* Container principal do carrossel */
+.carrossel {
+    width: 600%;               /* Ou a largura máxima que você desejar, ex: 800px */
+    max-width: 999px;
+    margin: 0 auto;            /* Centraliza o carrossel na tela */
+    overflow: hidden;          /* Esconde as imagens que estão fora da área visível */
+    border-radius: 10px;       /* Opcional: deixa as bordas arredondadas */
+}
+
+/* Container que segura todas as imagens lado a lado */
+.slides {
+    display: flex;
+    width: 300%;               /* Como são 3 imagens, o container precisa ter 3x o tamanho (300%) */
+    animation: slider 12s infinite; /* Executa a animação "slider" infinitamente em 12 segundos */
+}
+
+/* Configuração de cada imagem individual dentro do carrossel */
+.slides img {
+    width: 33%;            /* Cada imagem ocupa exatamente 1/3 do container de 300% */
+    height: 300px;             /* Defina a altura que achar melhor para o seu layout */
+    object-fit: cover;         /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+/* Animação para mover os slides */
+@keyframes slider {
+    0% { transform: translateX(0); }          /* Mostra a 1ª imagem */
+    25% { transform: translateX(0); }         /* Pausa na 1ª imagem */
+    35% { transform: translateX(-33.333%); }  /* Transição para a 2ª imagem */
+    60% { transform: translateX(-33.333%); }  /* Pausa na 2ª imagem */
+    70% { transform: translateX(-66.666%); }  /* Transição para a 3ª imagem */
+    95% { transform: translateX(-66.666%); }  /* Pausa na 3ª imagem */
+    100% { transform: translateX(0); }        /* Volta para a 1ª imagem */
+}
+
+.botao-saiba{
+  position: relative;
+  bottom: -15px;           /* Posiciona na parte inferior da foto igual ao seu modelo */
+  left: 50%;
+  top: 70px;
+  transform: translateX(-50%); /* Centralização horizontal perfeita */
+  width: 80%;
+  padding: 12px 20px;
+  background-color: #215BCF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "KoHo", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+  white-space: nowrap;    
+}
+
+.botao-saiba:hover {
+  background-color: #19469d;
+  transform: translateX(-50%) scale(1.05); /* Efeito sutil de zoom ao passar o mouse */
+}
+
+.botao-card{
+  position:relative;
+  top: -10px;
+  width: 30%;
+
+
+}
+/* CABEÇALHO */
+header {
+    position: relative;
+    padding: 50px 80px 30px;
+}
+
+/* TÍTULO */
+header h1 {
+    margin: 0;
+}
+
+/* SUBTÍTULO */
+header p {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   MENU NO CANTO SUPERIOR DIREITO
+========================= */
+
+.menu {
+    position: absolute;
+    top: 55px;
+    right: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* BOTÕES AZUIS */
+
+.menu a {
+    background-color: #215BCF;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 9px 13px;
+    border-radius: 7px;
+
+    font-family: 'KoHo', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #1748aa;
+}
+
+
+/* =========================
+   LUPA
+========================= */
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa input {
+    width: 130px;
+    height: 36px;
+
+    border: 2px solid #215BCF;
+    border-radius: 7px 0 0 7px;
+
+    padding: 0 8px;
+
+    outline: none;
+
+    font-family: 'KoHo', sans-serif;
+}
+
+.pesquisa button {
+    height: 40px;
+    width: 40px;
+
+    border: none;
+
+    background-color: #215BCF;
+    color: white;
+
+    border-radius: 0 7px 7px 0;
+
+    cursor: pointer;
+
+    font-size: 17px;
+}
+
+.pesquisa button:hover {
+    background-color: #1748aa;
+}
+/* =========================
+   VÍDEO
+========================= */
+
+.video-container {
+    width: 600px;
+    max-width: 90%;
+    margin: 70px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}

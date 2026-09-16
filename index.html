@@ -2,86 +2,276 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Trilha</title>
 
-  <title>Meu Site - Links e Imagens</title>
+    <link rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=KoHo:wght@400;500;600&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=KoHo:wght@400;500;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
-    <h1>Nova Trilha</h1>
-    <p>Seu guia para o mundo adulto</p>
-  </header>
+    <!-- CABEÇALHO -->
+    <header>
 
-  <!-- CARDS -->
-  <main class="ii">
+        <h1>Nova Trilha</h1>
+        <p>Seu guia para o mundo adulto</p>
 
-    <!-- CARD 1 -->
-    <div class="card">
-      <div class="container-foto">
+        <!-- MENU SUPERIOR -->
+        <nav class="menu">
 
-        <img src="img/imagem.webp" alt="Educação Financeira">
+            <!-- BOTÃO SAIBA MAIS -->
+            <a href="index4.html">Saiba Mais</a>
 
-        <a href="file:///C:/Users/LARISSAFAVERONUNES/Documents/GitHub/NOVA-TRILHA/index1.html">
+            <!-- PESQUISA -->
+            <div class="pesquisa">
+                <input 
+                    type="text" 
+                    id="campoPesquisa" 
+                    placeholder="Pesquisar..."
+                >
 
-          <button class="botao-sobre">
-            Educação Financeira
-          </button>
+                <button onclick="pesquisar()">🔍</button>
+            </div>
 
-        </a>
+        </nav>
 
-      </div>
-    </div>
+    </header>
 
-    <!-- CARD 2 -->
-    <div class="card">
-      <div class="container-foto">
 
-        <img src="img/trabalho.jfif" alt="Carreira">
-          <a href="file:///C:/Users/LARISSAFAVERONUNES/Documents/GitHub/NOVA-TRILHA/index2.html">
-        <button class="botao-sobre">
-          Carreira
-        </button>
+    <!-- CARROSSEL -->
+    <div class="carrossel">
 
-      </div>
-    </div>
+        <div class="slides">
 
-    <!-- CARD 3 -->
-    <div class="card">
-      <div class="container-foto">
+            <img 
+                src="img/vestibular.png" 
+                alt="Carrossel vestibular"
+            >
 
-        <img src="img/imposto.jfif" alt="Imposto de Renda">
-        <a href="file:///C:/Users/LARISSAFAVERONUNES/Documents/GitHub/NOVA-TRILHA/index3.html">
-        <button class="botao-sobre">
-          Imposto de Renda
-        </button>
+            <img 
+                src="img/original.jpg" 
+                alt="Carrossel original"
+            >
+
+            <img 
+                src="img/cnh2.png" 
+                alt="Carrossel CNH"
+            >
+
         </div>
 
-        <!--CARD DOS DEMAIS CARDS DA PAGINA -->
-        <div class="Meucard">
-        <a href="file:///C:/Users/LARISSAFAVERONUNES/Documents/GitHub/NOVA-TRILHA/index4.html">
-        <button class="botao-sobre">
-         Saiba Mais 
-         </button>
-
-      </div>
     </div>
 
-  </main>
+    <div class='video-container'>
+    <video controls poster='img/thumb.png'>
+      <source src="./img/Vic.mp4" type="video/mp4" />
+    </video>
+    </div>
 
-  <footer>
-    <p>&copy; Nova Trilha - Todos os direitos reservados.</p>
-  </footer>
+
+    <!-- CARDS -->
+    <main class="ii">
+
+        <!-- CARD 1 -->
+        <div class="card">
+
+            <div class="container-foto">
+
+                <img 
+                    src="img/imagem.webp" 
+                    alt="Educação Financeira"
+                >
+
+                <a href="index1.html">
+
+                    <button class="botao-sobre">
+                        Educação Financeira
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+        <div class="card">
+
+            <div class="container-foto">
+
+                <img 
+                    src="img/trabalho.jfif" 
+                    alt="Carreira"
+                >
+
+                <a href="index2.html">
+
+                    <button class="botao-sobre">
+                        Carreira
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="card">
+
+            <div class="container-foto">
+
+                <img 
+                    src="img/imposto.jfif" 
+                    alt="Imposto de Renda"
+                >
+
+                <a href="index3.html">
+
+                    <button class="botao-sobre">
+                        Imposto de Renda
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD SAIBA MAIS -->
+        <div class="botao-card">
+
+            <div class="container-foto">
+
+                <a href="index4.html">
+
+                    <button class="botao-saiba">
+                        Saiba Mais
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            &copy; Nova Trilha - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- FUNÇÃO DE PESQUISA -->
+    <script>
+
+        function pesquisar() {
+
+            const pesquisa = document
+                .getElementById("campoPesquisa")
+                .value
+                .toLowerCase()
+                .trim();
+
+
+            if (pesquisa === "") {
+
+                alert("Digite um assunto para pesquisar.");
+
+                return;
+            }
+
+
+            /* EDUCAÇÃO FINANCEIRA */
+
+            if (
+                pesquisa.includes("finance") ||
+                pesquisa.includes("dinheiro") ||
+                pesquisa.includes("finanças")
+            ) {
+
+                window.location.href = "index1.html";
+
+            }
+
+
+            /* CARREIRA */
+
+            else if (
+                pesquisa.includes("carreira") ||
+                pesquisa.includes("trabalho") ||
+                pesquisa.includes("profissão") ||
+                pesquisa.includes("emprego")
+            ) {
+
+                window.location.href = "index2.html";
+
+            }
+
+
+            /* IMPOSTO DE RENDA */
+
+            else if (
+                pesquisa.includes("imposto") ||
+                pesquisa.includes("renda")
+            ) {
+
+                window.location.href = "index3.html";
+
+            }
+
+
+            /* OUTROS ASSUNTOS */
+
+            else if (
+                pesquisa.includes("cnh") ||
+                pesquisa.includes("documento") ||
+                pesquisa.includes("documentos") ||
+                pesquisa.includes("vestibular") ||
+                pesquisa.includes("direito") ||
+                pesquisa.includes("direitos") ||
+                pesquisa.includes("concurso") ||
+                pesquisa.includes("estágio") ||
+                pesquisa.includes("estagio")
+            ) {
+
+                window.location.href = "index4.html";
+
+            }
+
+
+            /* ASSUNTO NÃO ENCONTRADO */
+
+            else {
+
+                alert(
+                    "Assunto não encontrado. " +
+                    "Tente pesquisar por Educação Financeira, " +
+                    "Carreira, Imposto de Renda, CNH, " +
+                    "Documentos, Vestibular, Direitos ou Estágio."
+                );
+
+            }
+
+        }
+
+    </script>
 
 </body>
 
